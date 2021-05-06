@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import *
 import json
-from django.core.serializers import serialize
 from .models import Advisor, User, Bookings
 from rest_framework.authtoken.models import Token
 from rest_framework.authtoken import views
