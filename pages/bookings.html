@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bookings</title>
+</head>
+<body>
+    <h2>Booking Details:-<br></h2>
+    {% for booking in schedule %}
+        <div>            
+            <div>                                
+                Advisor Name : {{booking.aID.advName}}
+                Advisor ID : {{booking.aID.id}}                
+            </div>
+            <div>
+                <img src="{{booking.aID.imgURL}}" width="100px" height="100px">
+            </div>
+            <div>
+                Booking ID : {{booking.id}}
+                Booking time : {{booking.time}}
+            </div>            
+            <br><br>
+        </div>
+    {% endfor %}
+</body>
+</html>

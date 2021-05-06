@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisors</title>
+</head>
+<body>
+    <h2>Advisor Details:-<br></h2>
+    {% for adv in advisors %}
+        <div>            
+            <div>
+                <a href="{{adv.id}}">
+                    <p>Name : {{adv.advName}}
+                    ID : {{adv.id}}<br></p>
+                </a>
+                <img src="{{adv.imgURL}}" width="100px" height="100px">
+            </div>
+        </div>
+    {% endfor %}
+</body>
+</html>
