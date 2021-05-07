@@ -113,9 +113,9 @@ def BookAdvisor(request,uid,aid):
             else:
                 return render(request,'book.html', {'adv':adv})
         else:
-            return HttpResponseNotFound('User does not exist',status=404)
+            return HttpResponseNotFound('Incorrect User/ Advisor ID',status=404)
     except User.DoesNotExist:
-        return HttpResponseNotFound('User does not exist',status=404)
+        return HttpResponseNotFound('Incorrect User/ Advisor ID',status=404)
 
 def ViewBookings(request,uid):
     try:
@@ -123,6 +123,6 @@ def ViewBookings(request,uid):
             bookings = Bookings.objects.filter(uID=uid)
             return render(request,'bookings.html', {'schedule':bookings})
         else:
-            return HttpResponseNotFound('User does not exist',status=404)
+            return HttpResponseNotFound('No bookings available',status=404)
     except User.DoesNotExist:
-        return HttpResponseNotFound('User does not exist',status=404)
+        return HttpResponseNotFound('No bookings available',status=404)
