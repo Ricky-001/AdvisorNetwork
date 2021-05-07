@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'AdvisorNetwork.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'advisor_network',
-        'USER' : 'postgres',
-        'PASSWORD' : 'admin',
-        'HOST' : 'localhost'
+        'NAME': 'd8u2397cnncsaj',
+        'USER' : 'yyhzsdjkawbevy',
+        'PASSWORD' : '96bfa7f8d3b0f819d55210c3a6229b6eca1be3e66b2aceb25befe5aedf58e2d4',
+        'HOST' : 'postgres://yyhzsdjkawbevy:96bfa7f8d3b0f819d55210c3a6229b6eca1be3e66b2aceb25befe5aedf58e2d4@ec2-52-0-114-209.compute-1.amazonaws.com:5432/d8u2397cnncsaj'
     }
 }
 
